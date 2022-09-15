@@ -10,48 +10,43 @@ body {
 *:after {
   box-sizing: border-box;
 }
-.super-mario{
+.super-mario {
   display: flex;
   justify-content: center;
-
 }
-.super-marios{
+.super-marios {
   position: relative;
 }
-.super-mario img{
+.super-mario img {
   width: 412px;
 }
-.left{
-  left:0;
-  right:50%;
+.left {
+  left: 0;
+  right: 50%;
 }
-.right{
-  left:90%;
-  right:0;
+.right {
+  left: 90%;
+  right: 0;
 }
-.attack{
-  left:36%;
-  right:0;
+.attack {
+  left: 36%;
+  right: 0;
 }
-.defense{
-  left:58%;
-  right:0;
+.defense {
+  left: 58%;
+  right: 0;
 }
 
-.buttons{
+.buttons {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.card{
+.card {
   display: flex;
-
-
 }
-.item{
-  flex:1 1 0;
+.item {
+  flex: 1 1 0;
   justify-content: center;
   display: flex;
 }
-
-
