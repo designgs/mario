@@ -93,3 +93,16 @@ const jsHero = {
     this.defense++;
   },
 };
+let numberOfFilms = +prompt("Сколько фильмов вы уже просмотрели?");
+let quest = prompt("Один из последних просмотренных фильмов?", ":");
+let quest1 = prompt("На сколько оцените его");
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {
+    result: quest + ":" + quest1,
+  },
+  actors: {},
+  genres: [],
+  privat: false,
+};
+console.log(personalMovieDB);
