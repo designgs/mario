@@ -1,0 +1,57 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.super-mario{
+  display: flex;
+  justify-content: center;
+
+}
+.super-marios{
+  position: relative;
+}
+.super-mario img{
+  width: 412px;
+}
+.left{
+  left:0;
+  right:50%;
+}
+.right{
+  left:90%;
+  right:0;
+}
+.attack{
+  left:36%;
+  right:0;
+}
+.defense{
+  left:58%;
+  right:0;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card{
+  display: flex;
+
+
+}
+.item{
+  flex:1 1 0;
+  justify-content: center;
+  display: flex;
+}
+
+
