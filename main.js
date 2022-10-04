@@ -1,3 +1,4 @@
+"use strict";
 // // // let age = prompt("Введите ваш возвраст", "");
 // // // if (age >= 18) {
 // // //   alert("вам разрешен доступ");
@@ -93,16 +94,21 @@ const jsHero = {
     this.defense++;
   },
 };
-let numberOfFilms = +prompt("Сколько фильмов вы уже просмотрели?");
-let quest = prompt("Один из последних просмотренных фильмов?", ":");
-let quest1 = prompt("На сколько оцените его");
-const personalMovieDB = {
-  count: numberOfFilms,
-  movies: {
-    result: quest + ":" + quest1,
-  },
-  actors: {},
-  genres: [],
-  privat: false,
-};
-console.log(personalMovieDB);
+
+var image = null;
+var i = 0;
+
+var imgs = new Array("x.png", "nol.png");
+
+function onDocumentReady() {
+  image = document.getElementById("image");
+}
+
+function imgsrc() {
+  i++;
+  if (i == imgs.length) i = 0;
+
+  image.src = imgs[i];
+}
+
+document.addEventListener("DOMContentLoaded", onDocumentReady);
